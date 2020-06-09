@@ -1,0 +1,8 @@
+.side-menu-branding {
+  height: 80px;
+  margin-bottom: calc(calc(30px/3) * 4);
+  display: flex;
+  align-items: center;
+  -webkit-padding-start: 30px;
+  padding-inline-start: 30px;
+}

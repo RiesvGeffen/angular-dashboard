@@ -1,0 +1,13 @@
+.container {
+  height: 100%;
+}
+
+.sidenav-content {
+  height: 100%;
+}
+
+.sidenav {
+  width: 260px;
+  background: rgb(59, 134, 255);
+  color: rgb(246, 250, 255);
+}

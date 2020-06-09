@@ -1,0 +1,9 @@
+<ul class="side-menu-navigation nav flex-column">
+  <ng-container *ngFor="let navItem of navItems">
+    <app-expandable-nav-item *ngIf="navItem?.children && navItem.children.length > 0" [navItem]="navItem">
+    </app-expandable-nav-item>
+
+    <app-nav-item *ngIf="!!!navItem?.children" [navItem]="navItem">
+    </app-nav-item>
+  </ng-container>
+</ul>

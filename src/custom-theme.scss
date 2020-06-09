@@ -1,4 +1,3 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
@@ -26,3 +25,9 @@ $angular-theme-theme: mat-light-theme($angular-theme-primary, $angular-theme-acc
 // that you are using.
 @include angular-material-theme($angular-theme-theme);
 
+// Define a custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.
+$custom-typography: mat-typography-config($font-family: '"Nunito Sans", sans-serif',
+);
+
+@include mat-base-typography($custom-typography);

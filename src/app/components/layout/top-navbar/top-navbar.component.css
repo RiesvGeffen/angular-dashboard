@@ -1,0 +1,18 @@
+.top-navbar-toolbar {
+  height: 80px;
+  background: transparent;
+  color: rgb(102, 109, 119);
+  padding: 0 30px;
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+  padding-inline-end: calc(30 - calc(30px/3));
+}
+
+.toggle-sidenav-btn {
+  padding: calc(calc(30px/3)/ 2) var(calc(30px/3));
+  color: rgb(102, 109, 119);
+  margin-inline-start: calc(calc(30px/3) * -1);
+}

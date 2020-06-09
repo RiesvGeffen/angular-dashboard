@@ -1,0 +1,13 @@
+<li class="menu-item expandable-item nav-item">
+  <mat-expansion-panel class="override-disabled" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+    disabled="true" [routerLink]="[navItem.url]">
+    <mat-expansion-panel-header class="menu-link">
+      <div class="item-header-content">
+        <mat-panel-title>
+          <i class="fas fa-th-large menu-item-icon"></i>
+          <span class="menu-item-title">{{ navItem.title }}</span>
+        </mat-panel-title>
+      </div>
+    </mat-expansion-panel-header>
+  </mat-expansion-panel>
+</li>
