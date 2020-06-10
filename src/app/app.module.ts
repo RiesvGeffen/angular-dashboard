@@ -12,13 +12,17 @@ import { ExpandableNavItemComponent } from './components/layout/expandable-nav-i
 import { NavItemComponent } from './components/layout/nav-item/nav-item.component';
 import { RootComponent } from './components/root/root.component';
 
+import { PageOneComponent } from './page-one/page-one.component';
+import { PageTwoComponent } from './page-two/page-two.component';
+
 // Material
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { PageOneComponent } from './page-one/page-one.component';
-import { PageTwoComponent } from './page-two/page-two.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +45,9 @@ import { PageTwoComponent } from './page-two/page-two.component';
     MatSidenavModule,
     MatButtonModule,
     MatToolbarModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [RootComponent]

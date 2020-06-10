@@ -8,14 +8,104 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
+$custom-brand: (50 : #e7f0ff,
+  100 : #c4dbff,
+  200 : #9dc3ff,
+  300 : #76aaff,
+  400 : #5898ff,
+  500 : #3b86ff,
+  600 : #357eff,
+  700 : #2d73ff,
+  800 : #2669ff,
+  900 : #1956ff,
+  A100 : #ffffff,
+  A200 : #fdfeff,
+  A400 : #cad7ff,
+  A700 : #b1c3ff,
+  contrast: (50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  ));
+
+$custom-accent: (50 : #e7faee,
+  100 : #c3f4d4,
+  200 : #9cecb7,
+  300 : #74e49a,
+  400 : #56df85,
+  500 : #38d96f,
+  600 : #32d567,
+  700 : #2bcf5c,
+  800 : #24ca52,
+  900 : #17c040,
+  A100 : #f3fff6,
+  A200 : #c0ffcd,
+  A400 : #8dffa5,
+  A700 : #74ff91,
+  contrast: (50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  ));
+
+$custom-warning: (50 : #fdf4e7,
+  100 : #f9e4c3,
+  200 : #f5d39b,
+  300 : #f1c172,
+  400 : #eeb354,
+  500 : #eba636,
+  600 : #e99e30,
+  700 : #e59529,
+  800 : #e28b22,
+  900 : #dd7b16,
+  A100 : #ffffff,
+  A200 : #ffecda,
+  A400 : #ffd1a7,
+  A700 : #ffc38e,
+  contrast: (50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  ));
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$angular-theme-primary: mat-palette($mat-indigo);
-$angular-theme-accent: mat-palette($mat-pink, A200, A100, A400);
+$angular-theme-primary: mat-palette($custom-brand);
+$angular-theme-accent: mat-palette($custom-accent);
 
 // The warn palette is optional (defaults to red).
-$angular-theme-warn: mat-palette($mat-red);
+$angular-theme-warn: mat-palette($custom-warning);
 
 // Create the theme object (a Sass map containing all of the palettes).
 $angular-theme-theme: mat-light-theme($angular-theme-primary, $angular-theme-accent, $angular-theme-warn);

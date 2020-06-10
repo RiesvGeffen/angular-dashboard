@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 // PARENT URL ONLY WORKS IF CHILDREN IS EMPTY
 export interface NavItem {
   title: string,
+  icon: string,
   url?: string,
   children?: {
     title: string,
@@ -20,6 +21,7 @@ export class SideMenuNavigationComponent implements OnInit {
   public readonly navItems: NavItem[] = [
     {
       title: 'Dashboards',
+      icon: 'fab fa-instagram',
       children: [
         {
           title: 'CRM',
@@ -29,6 +31,7 @@ export class SideMenuNavigationComponent implements OnInit {
     },
     {
       title: 'Users',
+      icon: 'fas fa-dice-d20',
       url: ''
     }
   ]

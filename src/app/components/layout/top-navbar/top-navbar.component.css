@@ -8,11 +8,49 @@
 .navbar-collapse {
   display: flex;
   align-items: center;
-  padding-inline-end: calc(30 - calc(30px/3));
+  padding-inline-end: 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .toggle-sidenav-btn {
-  padding: calc(calc(30px/3)/ 2) var(calc(30px/3));
+  padding: calc(calc(30px/3)/ 2) calc(30px/3);
   color: rgb(102, 109, 119);
   margin-inline-start: calc(calc(30px/3) * -1);
+}
+
+.navbar-controls {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search {
+  width: 50%;
+}
+
+.search-input {
+  width: 100%;
+}
+
+::ng-deep .mat-form-field-appearance-standard .mat-form-field-flex {
+  padding-top: 0px !important;
 }

@@ -11,3 +11,7 @@
   background: rgb(59, 134, 255);
   color: rgb(246, 250, 255);
 }
+
+.content-container {
+  padding: 15px 30px;
+}
