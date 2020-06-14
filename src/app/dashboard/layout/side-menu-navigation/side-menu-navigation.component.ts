@@ -25,14 +25,14 @@ export class SideMenuNavigationComponent implements OnInit {
       children: [
         {
           title: 'CRM',
-          url: 'page-two'
+          url: 'page-one'
         }
       ]
     },
     {
       title: 'Users',
       icon: 'fas fa-dice-d20',
-      url: '/'
+      url: 'page-two'
     }
   ]
 
