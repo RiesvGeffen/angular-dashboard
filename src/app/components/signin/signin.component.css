@@ -1,0 +1,104 @@
+.signin-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.signin-container {
+  display: flex;
+  max-width: 100%;
+  width: 850px;
+  min-height: 500px;
+  color: rgb(130, 138, 151);
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 11px 15px -7px rgba(0, 0, 0, .2), 0 24px 38px 3px rgba(0, 0, 0, .14), 0 9px 46px 8px rgba(0, 0, 0, .12);
+}
+
+.signin-form {
+  flex-basis: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.side-image {
+  flex-basis: 100%;
+  position: relative;
+}
+
+.background-image {
+  background-image: url(https://fully-preview.angular-templates.io/assets/imgs/authentication/login-modal-image.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container>i {
+  font-size: 75px;
+  color: rgb(59, 134, 255);
+}
+
+.signin-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  color: rgb(59, 134, 255);
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: calc(100% - 0.75rem - 0.75rem);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(152, 160, 174, 0.42);
+  color: rgb(60, 63, 70);
+}
+
+.form-control::placeholder {
+  font-size: 16px;
+  color: rgb(173, 179, 191);
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #bbd5ff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(59, 134, 255, .25);
+}
+
+.form-button {
+  width: 100%;
+  border-radius: 6px;
+}

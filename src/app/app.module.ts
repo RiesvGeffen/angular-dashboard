@@ -22,6 +22,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { SigninComponent } from './components/signin/signin.component';
+import { PortalComponent } from './components/portal/portal.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { MatInputModule } from '@angular/material/input';
     SideMenuBrandingComponent,
     ExpandableNavItemComponent,
     NavItemComponent,
-    RootComponent
+    RootComponent,
+    SigninComponent,
+    PortalComponent
   ],
   imports: [
     BrowserModule,

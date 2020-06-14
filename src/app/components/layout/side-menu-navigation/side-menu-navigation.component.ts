@@ -32,7 +32,7 @@ export class SideMenuNavigationComponent implements OnInit {
     {
       title: 'Users',
       icon: 'fas fa-dice-d20',
-      url: ''
+      url: '/'
     }
   ]
 

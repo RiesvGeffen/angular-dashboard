@@ -12,7 +12,7 @@
     <!-- Dropdown content -->
     <ul class="menu-sub-navigation nav flex-column">
       <li class="menu-item nav-item" *ngFor="let subItem of navItem.children">
-        <a class="menu-link nav-link" [routerLink]="[subItem.url]" routerLinkActive="active"
+        <a class="menu-link nav-link" [routerLink]="['/', subItem.url]" routerLinkActive="active"
           [routerLinkActiveOptions]="{exact: true}">
           <span class="menu-item-title">{{ subItem.title }}</span>
         </a>

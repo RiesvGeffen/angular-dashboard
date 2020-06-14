@@ -1,18 +1,1 @@
-<mat-drawer-container class="container" autosize>
-  <mat-drawer #drawer class="sidenav" mode="side" opened="true">
-
-    <app-side-menu-branding></app-side-menu-branding>
-    <app-side-menu-navigation></app-side-menu-navigation>
-
-  </mat-drawer>
-
-  <div class="sidenav-content">
-    <!-- Content here -->
-    <app-top-navbar [drawer]="drawer"></app-top-navbar>
-
-    <div class="content-container">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-
-</mat-drawer-container>
+<router-outlet></router-outlet>
