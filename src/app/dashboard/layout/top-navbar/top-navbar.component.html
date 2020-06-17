@@ -11,5 +11,15 @@
         <input matInput placeholder="Search" required>
       </mat-form-field>
     </div>
+    <div class="navbar-user">
+      <div class="navbar-user-image"></div>
+      <button class="navbar-user-button" disableRipple="true" mat-button [matMenuTriggerFor]="userMenu">
+        Username
+        <i class="fas fa-chevron-down"></i>
+      </button>
+      <mat-menu #userMenu="matMenu">
+        <button class="navbar-user-menu-item" mat-menu-item>Log out</button>
+      </mat-menu>
+    </div>
   </div>
 </mat-toolbar>
