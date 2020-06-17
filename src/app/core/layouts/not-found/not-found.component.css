@@ -1,0 +1,19 @@
+.not-found-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.not-found-title,
+.not-found-button {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgb(59, 134, 255);
+}
+
+.not-found-button {
+  font-size: 15px;
+  color: rgb(249, 249, 250);
+}
